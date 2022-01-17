@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+}
+body{
+  background-color: #fffbf5;
+  font-family: 'Courier New', Courier, monospace;
+}
+.flex-container{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+div.gallery {
+  margin: 27px;
+  border: 1px solid #ccc;
+  width: 320px;
+  height: 420px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  background-color: white;
+  color: black;
+  transition-duration: 0.2s;
+}
+  
+div.gallery:hover {
+  background-color: #141414;
+  color: white;
+}
+  
+div.gallery img {
+  width: 300px;
+  height: 300px;
+  display: block;
+  margin: 10px;
+  object-fit: cover;
+  filter: grayscale(100%);
+  transition-duration: 0.7s;
+}
+div.gallery img:hover{
+  filter: grayscale(0);
+}
+  
+div.desc {
+  padding: 30px;
+  text-align: center;
+  font-size: large;
+}
+
+h1 {
+  text-align: center;
+  color: black;
+}
